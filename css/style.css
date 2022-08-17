@@ -1,0 +1,419 @@
+body{
+    background-color: #F3F5FC;
+    transition: 0.2s all;
+    overflow-x: hidden;
+}
+
+
+header{
+    position: static;
+    margin: 2% 0 1% 3%;
+}
+
+.principal{
+    width: 100%;
+    height: auto;
+    display: flex;    
+}
+
+.esquerda{
+    position: relative;
+    display: inline-grid;
+    width: 1200px;
+    height: 80vh;
+    align-content: space-between;
+    left: 5%;
+}
+
+textarea{
+
+    position: relative;
+    width: 100%;
+    top: 10%;
+    display: flex;
+    margin-left: 3%;
+    resize: none;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871; 
+    background: none;
+    border: none;
+    outline: none;
+
+
+    width: 70%;
+    margin-right: 30%;
+    height: 50vh;
+}
+
+#mensagemCriptografada{
+    position: relative;
+    width: 100%;
+    top: 10%;
+    display: flex;
+    margin-left: 3%;
+    resize: none;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871; 
+    background: none;
+    border: none;
+    outline: none;
+
+
+    width: 100%;
+    margin-right: 0%;
+    height: 50vh;
+    margin-bottom: 35%;
+}
+
+::placeholder{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 150%;
+    color: #0A3871;   
+}
+
+.descricao{
+
+    margin-left: 34px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    /* identical to box height, or 18px */
+
+
+    /* Gray/gray-400 */
+
+    color: #495057;
+
+    opacity: 0.8;
+
+    /* Inside auto layout */    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.descricao img{
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.descricao p, img{
+    vertical-align: middle;
+}
+
+.botoes{
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    
+}
+
+.button{
+
+    margin: 3%;
+    
+    /* Auto layout */
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px;
+    gap: 8px;
+    flex-direction: column;
+    width: 328px;
+    height: 67px;
+
+    /* Dark blue/dark-blue-300 */
+
+    background: #0A3871;
+    border-radius: 24px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 19px;
+    text-align: center;
+
+    /* White */
+
+    color: #FFFFFF;
+    border: 1px solid #0A3871;
+    transition: 0.2s all;
+
+}
+
+.button:active{
+    background: #2663ae;
+}
+
+#descriptografar{
+    background: none;
+    color: #0A3871;
+}
+
+#descriptografar:active{
+    background: #edf1f5;
+    color: #0A3871;
+}
+
+#copiar{
+    background: none;
+    color: #0A3871;
+}
+
+#copiar:active{
+    background: #edf1f5;
+    color: #0A3871;
+}
+
+
+.direita img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.direita{
+
+    display: inline-flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 400px;
+    height: 80vh;
+    position: relative;
+    right: 2%;
+    float: right;
+    flex-wrap: wrap;
+    align-content: stretch;
+    padding: 10px;
+
+    /* USAR ISSO AQUI PRO MOBILE 
+    position: inherit;
+    */
+        
+    background: #FFFFFF;
+    /* shadow */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}  
+
+#aparece{
+    flex-direction: row;
+    align-content: flex-start;
+}
+
+#aparece button{
+    margin-bottom: 30px;
+    
+
+}
+
+h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    /* or 29px */
+
+    text-align: center;
+
+    /* Gray/gray-500 */
+
+    color: #343A40;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.descricaoDireita{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+    text-align: center;
+
+    /* Gray/gray-400 */
+
+    color: #495057;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+#mensagemCriptografada{
+    color: #495057 !important;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    top: 50px;
+    justify-content: space-around;
+}
+
+
+@media only screen and (max-width: 1202px) {
+
+    .principal{
+        display: inherit;    
+        height: auto;
+        width: 100vw;
+    }
+    #imagemDireita{
+        display: none;
+    }
+    .esquerda{
+        width: 90%;
+        height: auto;    
+    }
+    .direita{
+        display: flex;
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+        float: left;
+
+    }
+    textarea{
+        width: auto;
+        margin-right: 10%;
+        height: 30vh;
+        margin-bottom: 5%;
+    }
+    #mensagemCriptografada{
+        width: 90%;
+        margin-right: 0;
+        height: 30vh;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    #aparece{
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+    }
+    .textoEntrada{
+        position: relative;
+        width: 100vw;
+        top: 1%;
+        left: 2%;
+        height: auto;
+        display: flex;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 778px) {
+    .button{
+        width: 250px;
+        height: 67px;
+    }
+}
+@media only screen and (max-width: 600px){
+
+    .principal{
+        width: 100%;
+        height: auto;
+        display: inherit;  
+    }
+    .botoes{       
+        display: inherit; 
+        align-items: flex-start;
+       
+    }
+
+    .descricao{
+        margin-left: 0;
+    }
+    .button{     
+        width: 80%;
+        height: 67px;
+    }
+
+    .esquerda{
+        display: block;
+        justify-items: start;
+        width: 100%;
+        height: auto;
+    }
+    .direita{
+        width: 90%;
+        padding: 5%;
+        margin: 0%;
+        margin-left: 2%;
+        display: flex;
+    }
+    .direita h2{
+        font-size: 18px;
+    }
+    .direita p{
+        font-size: 10px;
+    }
+    .botoes{
+        display: inherit;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        
+    }
+    textarea{
+        width: 80%;
+        height: 50vh;
+        margin-bottom: 5%;
+    }
+    #mensagemCriptografada{
+        width: 80%;
+        margin-right: 0;
+        height: auto;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    footer{
+        margin-top: 150px;
+    }
+
+}

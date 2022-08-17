@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="icon" type="image/x-icon" href="/imgs/favico.png">
+</head>
+<body>
+   
+    <header>
+        <a href="https://www.alura.com.br" target="_blank"><img src="imgs/logo.svg" alt="logo"></a>
+    </header>
+
+    <div class="principal">     
+        <div class="esquerda"> 
+            
+                <textarea required  id="mensagem" class="inputPadrao" placeholder="Digite seu texto"></textarea>
+
+            <div class="acoes">
+                <p class="descricao" readonly="true"><img src="imgs/importanIcon.svg" alt="Icon Important"> Apenas letras minúsculas e sem acento.</p>
+
+                <div class="botoes">
+                    <button type="button" class="button" id="criptografar" onclick="criptografar()">Criptografar</button>
+                    <button type="button" class="button" id="descriptografar" onclick="descriptografar()">Descriptografar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="direita" id="desaparece">
+
+            
+                <img id="imagemDireita" src="imgs/icon.svg" alt="icon">
+    
+                <h2>Nenhuma mensagem foi encontrada</h2>
+    
+                <p class="descricaoDireita">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            
+        </div>
+
+        <div class="direita" id="aparece" style="display: none;">
+            
+
+                <textarea readonly id="mensagemCriptografada" class="js-copytextarea"></textarea>
+
+                <button class="button js-textareacopybtn" id="copiar">Copiar</button>
+                
+                <!-- 
+                    botão pra limpar texto
+                <button class="button" id="limpar" onclick = "limpar('clear')">Limpar</button>
+                -->
+        
+
+        </div>
+       
+    </div>
+    <footer>
+        <div class="contato">
+            <p>Programa ONE BR T3 Alura & Oracle 2022</p>
+            <a href="https://www.linkedin.com/in/jose-rafael-/" target="_blank">linkedin</a> <a href="https://github.com/billyj0w" target="_blank">github</a>&copy; José Rafael 
+        </div>
+    </footer>
+    <!-- 
+    <footer>
+        <p>Programa ONE BR T3 Alura & Oracle 2022</p>
+        <a href="https://www.linkedin.com/in/jose-rafael-/" target="_blank">linkedin</a> <a href="https://github.com/billyj0w" target="_blank">github</a>&copy; José Rafael 
+    </footer>
+-->
+    <script src="js/script.js"></script>
+</body>
+</html>
