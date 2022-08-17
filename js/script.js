@@ -67,27 +67,16 @@ console.log(alteracaoLista);
 
 }
 
-//DESCRIPTOGRAFANDO
-  
-  function descriptografar(){
-    var textoCriptografado = document.getElementById("mensagemCriptografada").value;
-    var listaSubstituicao = {
-      enter:"e",
-      imes:"i",
-      ai:"a",
-      ober:"o",
-      ufat:"u"
-    };
-    
-      descriptografarTexto = textoCriptografado.replace(/enter|imes|ai|ober|ufat/i, function(item){
-        let it = listaSubstituicao[item];
-        let itemLista = it.replace(/(?:^|\s)\S/g, function(elemento) { return elemento.toLowerCase(); });
-        return itemLista;
-        
-    });   
-    
+function descriptografar() {
+    let text = document.getElementById('mensagemCriptografada').value.toLowerCase()
 
-    const textoSaida2 = document.querySelector('#mensagemCriptografada')
-    textoSaida2.textContent = descriptografarTexto;
-    console.log(descriptografarTexto);
-  }
+    let encryptedText = text.replace(/enter/igm, "e")
+    encryptedText = encryptedText.replace(/ober/igm, "o")
+    encryptedText = encryptedText.replace(/imes/igm, "i")
+    encryptedText = encryptedText.replace(/ai/igm, "a")
+    encryptedText = encryptedText.replace(/ufat/igm, "u")
+
+
+    const textoSaida = document.querySelector('#mensagemCriptografada')
+    textoSaida.textContent = encryptedText;
+}
