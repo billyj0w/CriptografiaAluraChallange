@@ -412,6 +412,10 @@ footer {
         margin-bottom: 5%;
         margin-top: 5%;
     }
+    #copiar{
+        width: 92%;
+    }
+
     footer{
         margin-top: 150px;
     }
