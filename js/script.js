@@ -15,22 +15,14 @@
 });
 
 //BLOQUEANDO LETRAS MAIUSCULAS E SIMBOLOS
-var ta = document.getElementById("mensagem");
-var letterNumber = /^[a-z]+$/;
-ta.addEventListener(
-    'keypress',
-    function (e) {
-        // Test for the key codes you want to filter out.
-        if (e.key.match(letterNumber)) {
-            
-        }else{
-          alert('Apenas letras minúsculas e sem acento.');
-            // Prevent the default event action (adding the
-            // character to the textarea).
-            e.preventDefault();
-        }
+  ta = document.getElementById('mensagem');
+  var letterNumber = /^[a-z]+$/;
+  ta.addEventListener('beforeinput', function(e) {
+    // Test for the key codes you want to filter out.
+    if (/[^a-z\s]/.test(e.data)) {
+      e.preventDefault();
     }
-);
+});
 
 //CRIPTOGRAFANDO TEXTO
 function limpar(mensagemCriptografada){
